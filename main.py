@@ -12,7 +12,7 @@ def parallel_processing(n, m, data):
                 ml=thr[g]
                 mt=g
         output.append((mt, ml))
-        thr[mt]=thr[mt]+data[r]
+        thr[mt]=(thr[mt]+data[r])
 
     # TODO: write the function for simulating parallel tasks, 
     # create the output pairs
