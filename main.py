@@ -2,7 +2,7 @@
 
 def parallel_processing(n, m, data):
     output = []
-    thr=[]
+    thr=[0]*n
 
     for r in range(m):
         ml=thr[0]
