@@ -36,8 +36,8 @@ def main():
     result = parallel_processing(n,m,data)
     
     # TODO: print out the results, each pair in it's own line
-    for p in range(len(result)):
-        print(str(result[p][0])+" "+str(result[p][1]))
+    #for p in range(len(result)):
+     #   print(str(result[p][0])+" "+str(result[p][1]))
 
 
 
