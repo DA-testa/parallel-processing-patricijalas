@@ -8,7 +8,7 @@ def parallel_processing(n, m, data):
         ml=thr[0]
         mt=0
         for g in range(1,n):
-            if thr[g]<mt:
+            if thr[g]<ml:
                 ml=thr
                 mt=g
         output.append((mt, ml))
@@ -36,9 +36,8 @@ def main():
     result = parallel_processing(n,m,data)
     
     # TODO: print out the results, each pair in it's own line
-    for thr, p in result:
-        print(thr,p)
-
+    for p in range(len(result)):
+        print(str(result[p][0])+str(result[p][1]))
 
 
 if __name__ == "__main__":
