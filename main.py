@@ -9,7 +9,7 @@ def parallel_processing(n, m, data):
         mt=0
         for g in range(1,n):
             if thr[g]<ml:
-                ml=thr
+                ml=thr[g]
                 mt=g
         output.append((mt, ml))
         thr[mt]=thr[mt]+data[r]
