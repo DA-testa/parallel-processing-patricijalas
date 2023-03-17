@@ -39,7 +39,7 @@ def main():
     
     # TODO: print out the results, each pair in it's own line
     for p in range(len(result)):
-        print((result[p][0])+(result[p][1]))
+        print(str(result[p][0])+str(result[p][1]))
 
 
 
